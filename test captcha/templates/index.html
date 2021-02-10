@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>reCAPTCHA demo: Simple page</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <form action="login_validate" method="POST">
+		<input type="text" name="username"  placeholder="enter username" required><br>
+		<input type="email" name="email"  placeholder="enter email" required><br>
+		<input type="text" name="gst"  placeholder="enter gstno" required><br>
+		<input type="password" name="password"  placeholder="enter password" required><br>
+      <div class="g-recaptcha" data-sitekey="6Let1lEaAAAAACN2JXyfveloFTh2Vu_Rz6AjnwBs",name="6Let1lEaAAAAACN2JXyfveloFTh2Vu_Rz6AjnwBs"></div>
+      <br/>
+      <input type="submit" value="Submit">
+    </form>
+  {{message}}
+  </body>
+</html>
